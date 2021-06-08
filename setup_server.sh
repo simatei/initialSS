@@ -14,12 +14,18 @@ ssh-keygen
 echo "SSH KEY GENERATED SUCCESSFULLY"
 sleep 2
 echo "SETUP GIT"
+sleep 1
 echo "ENTER GIT NAME"
 read NAME
-git config --global user.name $NAME
-
+echo $NAME
+git config --global user.name "$NAME"
+sleep 1
 echo "ENTER GIT E-MAIL"
 read EMAIL
 git config --global user.email $EMAIL
+sleep 2
+echo "YOUR GIT SETTINGS"
+git config --global user.name
+git config --global user.email
 sleep 2
 echo "SETUP SUCCESSFUL"
