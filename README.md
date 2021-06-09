@@ -15,7 +15,7 @@ docker run -d \
     -i 30
 ```
 
-##### Setup Watchtower notifications
+##### Setup Watchtower email notifications
 ```
 docker run -d \
   --name watchtower \
