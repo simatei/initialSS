@@ -17,7 +17,6 @@ tput setaf 4; echo "SETUP GIT"
 sleep 1
 tput setaf 4; echo "ENTER GIT NAME"
 read NAME
-tput setaf 4; echo $NAME
 git config --global user.name "$NAME"
 sleep 1
 tput setaf 4; echo "ENTER GIT E-MAIL"
