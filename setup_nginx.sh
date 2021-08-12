@@ -25,6 +25,7 @@ server {
     }
 
 }
+
 EOF
 service nginx restart
 
