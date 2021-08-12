@@ -18,7 +18,6 @@ echo -e "\e[1;33mEnter your git name: \e[0m"
 read NAME
 git config --global user.name "$NAME"
 echo -e "\e[1;33mEnter your git email: \e[0m"
-tput setaf 4; echo "ENTER GIT E-MAIL"
 read EMAIL
 git config --global user.email $EMAIL
 echo -e "\e[1;32mGIT config set successfully! \e[0m"
