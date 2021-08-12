@@ -27,6 +27,15 @@ server {
 }
 
 EOF
+
+echo "\e[33mDo You Want to Edit Your Nginx Config File\e[0m"
+read -p 'Enter y or n: ' answer
+if [ "$answer" = 'y' ]; then
+    echo "\033[32mOpening Nginx Config File \033[0m"
+    sleep 0.5
+    nano /etc/nginx/sites-enabled/default
+fi
+
 echo -e "\e[32mTesting Config File\e[0m"
 nginx -t
 
