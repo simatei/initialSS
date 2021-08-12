@@ -36,10 +36,10 @@ if [ "$answer" = 'y' ]; then
     nano /etc/nginx/sites-enabled/default
 fi
 
-echo -e "\e[32mTesting Config File\e[0m"
+echo "\e[32mTesting Config File\e[0m"
 nginx -t
 
-echo -e "\e[32mRestarting Nginx\e[0m"
+echo "\e[32mRestarting Nginx\e[0m"
 service nginx restart
 
-echo -e "\e[1;32mDone!\e[0m"
+echo "\e[1;32mDone!\e[0m"
