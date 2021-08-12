@@ -1,3 +1,4 @@
+Some shell scripts to ease my Initial Server Setup
 ### Usage
 
 ```
