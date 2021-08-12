@@ -4,7 +4,7 @@ if [ ! -f /usr/sbin/nginx ]; then
     apt-get install -y nginx
 fi
 
-cat > etc/nginx/sites-enabled/default <<EOF
+cat > /etc/nginx/sites-enabled/default <<EOF
 server {
 
         listen 80 default_server;
