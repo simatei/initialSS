@@ -20,6 +20,7 @@ echo "Django>=3.0,<4.0" >> requirements.txt
 echo "psycopg2>=2.8" >> requirements.txt
 echo "django-environ==0.9.0" >> requirements.txt
 echo "djangorestframework==3.13.1" >> requirements.txt
+echo "requests==2.28.1" >> requirements.txt
 echo -e "\033[1;34mUpdating Dockerfile...\033[0m"
 echo "FROM python:3
 ENV PYTHONDONTWRITEBYTECODE 1
