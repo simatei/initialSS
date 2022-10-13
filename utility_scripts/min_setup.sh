@@ -1,3 +1,5 @@
+#!/bin/bash
+
 apt install curl
 echo -e "\e[1;33mInstalling Docker Engine\e[0m"
 curl -fsSL https://get.docker.com -o get-docker.sh

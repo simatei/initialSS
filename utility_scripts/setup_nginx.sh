@@ -1,3 +1,4 @@
+#!/bin/bash
 
 if [ ! -f /usr/sbin/nginx ]; then
     echo "Installing nginx"

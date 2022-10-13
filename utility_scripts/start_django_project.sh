@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Enter project name:"
 read project
 mkdir $project
@@ -44,7 +46,7 @@ services:
       POSTGRES_DB: postgres
   web:
     build: .
-    command: python manage.py runserver
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:

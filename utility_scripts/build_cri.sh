@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Run these commands as root
 ###Install GO###
 wget https://storage.googleapis.com/golang/getgo/installer_linux
