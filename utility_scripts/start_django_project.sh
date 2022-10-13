@@ -27,11 +27,11 @@ echo -e "\033[1;34mUpdating Dockerfile...\033[0m"
 echo "FROM python:3
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /code
-WORKDIR /code
-COPY requirements.txt /code/
+RUN mkdir /app
+WORKDIR /app
+COPY requirements.txt /app/
 RUN pip install -r requirements.txt
-COPY . /code/" > Dockerfile
+COPY . /app/" > Dockerfile
 echo -e "\033[1;34mUpdating Compose file...\033[0m"
 
 echo "version: '3'
@@ -40,17 +40,14 @@ services:
     image: postgres
     volumes:
       - dbdata:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: postgres
+    env_file:
+      - envs/.dev
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
-
         - 8000:8000
     depends_on:
         - db
@@ -223,5 +220,5 @@ cython_debug/
 echo -e "\033[1;34mCreating Django project...\033[0m"
 docker-compose run web django-admin startproject $project .
 
-echo -e "\033[1;32mDone! But, a double check would be nice :) \033[0m"
+echo -e "\033[1;32mDone!, Update the local .dev file :) \033[0m"
 
