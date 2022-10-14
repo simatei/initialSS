@@ -15,6 +15,12 @@ touch README.md
 echo -e "\033[1;34mCreating local environment files...\033[0m"
 mkdir envs
 touch envs/.dev
+echo "POSTGRES_USER=postgres" >> envs/.dev
+echo "POSTGRES_PASSWORD=postgres" >> envs/.dev
+echo "POSTGRES_DB=postgres" >> envs/.dev
+echo "POSTGRES_HOST=db" >> envs/.dev
+echo "POSTGRES_PORT=5432" >> envs/.dev
+echo "ALLOWED_HOSTS=*" >> envs/.dev
 echo -e "\033[1;34mCreating requirenets file...\033[0m"
 touch requirements.txt
 echo -e "\033[1;34mUpdating requirements.txt...\033[0m"
