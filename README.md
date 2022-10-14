@@ -1,10 +1,11 @@
-Some shell scripts to ease my Initial Server Setup
+Scripts for some grunt tasks
 ### Usage
 
 ```
-git clone https://github.com/simatei/initial-server-setup.git
-cd initial-server-setup
-sudo bash setup_server.sh
+git https://github.com/simatei/InitialSS.git
+cd initiaSS
+sudo bash utility_scripts/<what you want to do>
+
 
 ```
 ##### Setup Watchtower for CI/CD
