@@ -32,3 +32,5 @@ docker run -d \
   -e WATCHTOWER_NOTIFICATION_EMAIL_DELAY=2 \
   containrrr/watchtower
 ```
+##### Setup HAProxy
+link: https://www.haproxy.com/blog/haproxy-configuration-basics-load-balance-your-servers/
