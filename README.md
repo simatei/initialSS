@@ -34,3 +34,6 @@ docker run -d \
 ```
 ##### Setup HAProxy
 link: https://www.haproxy.com/blog/haproxy-configuration-basics-load-balance-your-servers/
+
+------------------------------
+Permissions set: ```chown -R $USER:$USER <file or directory>```
